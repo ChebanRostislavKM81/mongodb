@@ -47,7 +47,7 @@ def populate(start_table: Collection, lastrow: Collection, csv_filename, year, l
             raise exception
 
 def main():
-    client = MongoClient(port=int(27017))
+    client = MongoClient(port=27017)
     db = client.database
 
     collections = db.list_collection_names()
